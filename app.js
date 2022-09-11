@@ -22,7 +22,7 @@ const store = new MongoDBStore({
   collection: 'sessions'
 });
 
-// Token to prevent CSRF attacks
+// Token to prevent CSRF
 const csrfProtection = csrf();
 
 const fileStorage = multer.diskStorage({
